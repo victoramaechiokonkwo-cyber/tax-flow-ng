@@ -1,0 +1,130 @@
+.audit-stats {
+  margin-bottom: 0;
+}
+
+.audit-stat {
+  text-align: center;
+  padding: 20px;
+}
+
+.audit-label {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--text-light);
+  margin-bottom: 8px;
+}
+
+.audit-stat h3 {
+  font-size: 28px;
+  color: var(--primary-dark);
+  margin: 0;
+}
+
+.audit-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--border);
+}
+
+.audit-header h3 {
+  font-size: 18px;
+  color: var(--primary-dark);
+}
+
+.audit-filters {
+  display: flex;
+  gap: 12px;
+}
+
+.audit-filters select,
+.audit-filters input {
+  padding: 8px 12px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-size: 13px;
+}
+
+.audit-timeline {
+  display: flex;
+  flex-direction: column;
+}
+
+.audit-item {
+  display: flex;
+  gap: 16px;
+  padding-bottom: 24px;
+}
+
+.audit-marker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 24px;
+}
+
+.audit-dot {
+  width: 12px;
+  height: 12px;
+  background: var(--primary);
+  border-radius: 50%;
+  border: 3px solid white;
+  box-shadow: 0 0 0 2px var(--primary);
+  flex-shrink: 0;
+}
+
+.audit-line {
+  width: 2px;
+  flex: 1;
+  background: var(--border);
+  margin-top: 4px;
+}
+
+.audit-content {
+  flex: 1;
+  background: var(--accent);
+  padding: 16px;
+  border-radius: 8px;
+  margin-top: -6px;
+}
+
+.audit-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.audit-action {
+  font-weight: 700;
+  color: var(--primary-dark);
+  font-size: 14px;
+}
+
+.audit-time {
+  font-size: 12px;
+  color: var(--text-light);
+  font-family: monospace;
+}
+
+.audit-bottom {
+  display: flex;
+  gap: 16px;
+  font-size: 13px;
+  color: var(--text-light);
+}
+
+.audit-bottom span {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+@media (max-width: 768px) {
+  .audit-header { flex-direction: column; align-items: flex-start; gap: 12px; }
+  .audit-filters { width: 100%; }
+  .audit-filters select, .audit-filters input { flex: 1; }
+}

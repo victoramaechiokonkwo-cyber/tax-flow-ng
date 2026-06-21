@@ -1,0 +1,17 @@
+.tax-container-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--border);
+}
+
+.tax-container-header h3 {
+  font-size: 18px;
+  color: var(--primary-dark);
+}
+
+.tax-container-body {
+  color: var(--text);
+}
